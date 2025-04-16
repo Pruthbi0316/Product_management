@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: date_and_time
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: date_and_time
+  template:
+    metadata:
+      labels:
+        app: date_and_time
+    spec:
+      containers:
+      - name: date_and_time
+        image: date_and_time:v1
+        ports:
+        - containerPort: 8080
