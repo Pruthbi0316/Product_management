@@ -12,3 +12,6 @@ docker run --rm \
   scan image date_and_time:v1 \
   --format json \
   --output /output/data_and_time_image_scan_findings.json
+
+  !! Check web application ( data and time ) at following url
+  https://product-management-usu2.onrender.com/
